@@ -1,0 +1,93 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myproject_top glbl -prj myproject.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /opt/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s myproject -debug wave 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/myproject.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_myproject_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/AESL_axi_s_input_1_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_1_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/AESL_axi_s_layer2_out_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_layer2_out_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/Block_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/product_dense_ap_fixed_ap_fixed_ap_fixed_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module product_dense_ap_fixed_ap_fixed_ap_fixed_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/myproject.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/regslice_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regslice_both
+INFO: [VRFC 10-311] analyzing module regslice_forward
+INFO: [VRFC 10-311] analyzing module regslice_reverse
+INFO: [VRFC 10-311] analyzing module regslice_both_w1
+INFO: [VRFC 10-311] analyzing module regslice_forward_w1
+INFO: [VRFC 10-311] analyzing module regslice_reverse_w1
+INFO: [VRFC 10-311] analyzing module ibuf
+INFO: [VRFC 10-311] analyzing module obuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layebkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layebkb_core
+INFO: [VRFC 10-311] analyzing module cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layebkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/myproject_mul_mul_16s_16s_18_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_16s_18_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_16s_18_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_w2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_w2_V_rom
+INFO: [VRFC 10-311] analyzing module conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_w2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/fifo_w16_d25_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d25_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d25_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/sim/verilog/start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Block_proc
+Compiling module xil_defaultlib.ibuf(W=17)
+Compiling module xil_defaultlib.obuf(W=17)
+Compiling module xil_defaultlib.regslice_both(DataWidth=16)
+Compiling module xil_defaultlib.zeropad2d_cl_me_ap_fixed_ap_fixe...
+Compiling module xil_defaultlib.conv_2d_cl_me_ap_fixed_ap_fixed_...
+Compiling module xil_defaultlib.conv_2d_cl_me_ap_fixed_ap_fixed_...
+Compiling module xil_defaultlib.cnnshift_arr_ap_fixed_ap_fixed_1...
+Compiling module xil_defaultlib.cnnshift_arr_ap_fixed_ap_fixed_1...
+Compiling module xil_defaultlib.cnnshift_arr_ap_fixed_ap_fixed_1...
+Compiling module xil_defaultlib.myproject_mul_mul_16s_16s_18_1_1...
+Compiling module xil_defaultlib.myproject_mul_mul_16s_16s_18_1_1...
+Compiling module xil_defaultlib.product_dense_ap_fixed_ap_fixed_...
+Compiling module xil_defaultlib.conv_2d_cl_me_ap_fixed_ap_fixed_...
+Compiling module xil_defaultlib.fifo_w16_d25_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d25_A
+Compiling module xil_defaultlib.start_for_conv_2d_cl_me_ap_fixed...
+Compiling module xil_defaultlib.start_for_conv_2d_cl_me_ap_fixed...
+Compiling module xil_defaultlib.myproject
+Compiling module xil_defaultlib.fifo(DEPTH=72,WIDTH=16)
+Compiling module xil_defaultlib.AESL_axi_s_input_1_V_V
+Compiling module xil_defaultlib.AESL_axi_s_layer2_out_V_V
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.apatb_myproject_top
+Compiling module work.glbl
+Built simulation snapshot myproject

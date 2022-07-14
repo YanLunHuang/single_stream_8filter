@@ -1,0 +1,1539 @@
+INFO-FLOW: Workspace /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1 opened at Wed Jul 06 19:03:00 CST 2022
+Execute     config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+Execute     config_compile -name_max_length 60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute     set_part xczu9eg-ffvb1156-2-e 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data single -quiet 
+Command       ap_part_info done; 1.7 sec.
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu9eg:-ffvb1156:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute         ap_part_info -data single -name xczu9eg-ffvb1156-2-e 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data resources 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 34260} {LUT 274080} {FF 548160} {DSP48E 2520} {BRAM 1824} {URAM 0} 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute         config_chip_info -quiet -speed medium 
+Command       add_library done; 0.15 sec.
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.97 sec.
+Execute     create_clock -period 5 -name default 
+Execute       config_clock -quiet -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       is_encrypted /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp 
+Execute       is_xip /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp 
+Execute       is_encrypted /home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp 
+Execute       is_xip /home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design done; 3.85 sec.
+Execute     csynth_design 
+Execute       get_config_compile -dump_cfg 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute         get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute         get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute         is_m_axi_addr64 
+INFO-FLOW: Handling firmware/myproject.cpp as C++
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute         is_encrypted firmware/myproject.cpp 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute         clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "firmware/myproject.cpp"   -std=c++0x  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp" 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E firmware/myproject.cpp -std=c++0x -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+Command         clang done; 1.69 sec.
+Execute         tidy_31 xilinx-xfmat-array-geometry /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command         tidy_31 done; 1.05 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute         clang -syntaxcheck -src /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -std=c++0x  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp"  -o "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -std=c++0x -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/useless.bc
+Command         clang done; 2.21 sec.
+INFO-FLOW: Done: GCC PP time: 5 seconds per iteration
+Execute         source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute         list_core -type functional_unit 
+Execute         tidy_31 xilinx-systemc-detector /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -directive=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command         tidy_31 done; 0.94 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute         tidy_31 xilinx-directive2pragma /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -directive=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command         tidy_31 done; 0.93 sec.
+Execute         get_config_dataflow -strict_mode 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.myproject.pp.0.cpp.diag.yml /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0 -fstrict-dataflow > /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.myproject.pp.0.cpp.out.log 2> /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.myproject.pp.0.cpp.err.log 
+Command         ap_eval done; 1.07 sec.
+Execute         source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/nnet_utils/nnet_dense_latency.h:64:9
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/nnet_utils/nnet_dense_latency.h:79:2
+WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: firmware/nnet_utils/nnet_dense_latency.h:76:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:62:78
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:62:82
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject.cpp:38:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject.cpp:39:5
+Execute         send_msg_by_id WARNING @200-471@%s%s 7 firmware/myproject.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 7 issue(s) in file firmware/myproject.cpp
+Execute         tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/tidy-3.1.myproject.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0 > /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/tidy-3.1.myproject.pp.0.cpp.out.log 2> /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/tidy-3.1.myproject.pp.0.cpp.err.log 
+Command           ap_eval done; 1.84 sec.
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0 > /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/xilinx-legacy-rewriter.myproject.pp.0.cpp.out.log 2> /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/xilinx-legacy-rewriter.myproject.pp.0.cpp.err.log 
+Command           ap_eval done; 0.82 sec.
+Command         tidy_31 done; 2.71 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 4.8 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute         tidy_31 xilinx-ssdm-intrinsics-arguments /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pragma.1.cpp std=c++0x 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pragma.1.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command         tidy_31 done; 1.97 sec.
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+INFO-FLOW: Processing labels
+Execute         clang -src /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pragma.2.cpp"  -std=c++0x  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.bc" 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pragma.2.cpp -std=c++0x -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.bc
+WARNING: [HLS 200-40] child killed: interrupt
+Command         clang done; error code: 2; 0.25 sec.
+Command       elaborate done; error code: 2; 13.57 sec.
+Command     csynth_design done; error code: 2; 13.57 sec.
+Command   ap_source done; error code: 1; 19.47 sec.
+Execute   cleanup_all 
+INFO-FLOW: Workspace /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1 opened at Wed Jul 06 19:04:28 CST 2022
+Execute       config_clock -quiet -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.11 sec.
+Command       ap_source done; 0.11 sec.
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute       set_part xczu9eg-ffvb1156-2-e 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data single -quiet 
+Command         ap_part_info done; 1.69 sec.
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute         add_library xilinx/zynquplus/zynquplus:xczu9eg:-ffvb1156:-2-e 
+Execute           get_default_platform 
+Execute           open_platform DefaultPlatform 
+Execute           import_lib /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute           ap_part_info -data single -name xczu9eg-ffvb1156-2-e 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data resources 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute           config_chip_info -quiet -resource {SLICE 34260} {LUT 274080} {FF 548160} {DSP48E 2520} {BRAM 1824} {URAM 0} 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute           config_chip_info -quiet -speed medium 
+Command         add_library done; 0.15 sec.
+Execute         add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute           get_default_platform 
+Execute           open_platform DefaultPlatform 
+Execute           import_lib /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                   source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                   source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute         get_default_platform 
+Command       set_part done; 1.95 sec.
+Execute       ap_part_info -data single -name xczu9eg-ffvb1156-2-e 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data resources 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       config_chip_info -quiet -resource {SLICE 34260} {LUT 274080} {FF 548160} {DSP48E 2520} {BRAM 1824} {URAM 0} 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       config_chip_info -quiet -speed medium 
+Execute       config_array_partition -maximum_size=4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+Execute       config_compile -name_max_length=60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Command     open_solution done; 2.14 sec.
+Execute     config_array_partition -maximum_size 4096 
+INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+Execute     config_compile -name_max_length 60 
+INFO: [XFORM 203-1161] The maximum of name length is set into 60.
+Execute     set_part xczu9eg-ffvb1156-2-e 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data single -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu9eg:-ffvb1156:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute         ap_part_info -data single -name xczu9eg-ffvb1156-2-e 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data resources 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 34260} {LUT 274080} {FF 548160} {DSP48E 2520} {BRAM 1824} {URAM 0} 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute         config_chip_info -quiet -speed medium 
+Command       add_library done; 0.16 sec.
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.26 sec.
+Execute     create_clock -period 5 -name default 
+Execute     csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       source csim/.lst_opt.tcl 
+Execute       is_encrypted /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp 
+Execute       is_xip /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp 
+Execute       is_encrypted /home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp 
+Execute       is_xip /home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Execute     csynth_design 
+Execute       get_config_compile -dump_cfg 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute         get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute         get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute         is_m_axi_addr64 
+INFO-FLOW: Handling firmware/myproject.cpp as C++
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute         is_encrypted firmware/myproject.cpp 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute         clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "firmware/myproject.cpp"   -std=c++0x  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp" 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E firmware/myproject.cpp -std=c++0x -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+Command         clang done; 1.71 sec.
+Execute         tidy_31 xilinx-xfmat-array-geometry /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command         tidy_31 done; 1.03 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute         clang -syntaxcheck -src /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -std=c++0x  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp"  -o "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -std=c++0x -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/useless.bc
+Command         clang done; 2.24 sec.
+INFO-FLOW: Done: GCC PP time: 5 seconds per iteration
+Execute         source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute         list_core -type functional_unit 
+Execute         tidy_31 xilinx-systemc-detector /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -directive=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command         tidy_31 done; 0.93 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute         tidy_31 xilinx-directive2pragma /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x -directive=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command         tidy_31 done; 0.91 sec.
+Execute         get_config_dataflow -strict_mode 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.myproject.pp.0.cpp.diag.yml /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0 -fstrict-dataflow > /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.myproject.pp.0.cpp.out.log 2> /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.myproject.pp.0.cpp.err.log 
+Command         ap_eval done; 1.09 sec.
+Execute         source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/nnet_utils/nnet_dense_latency.h:64:9
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/nnet_utils/nnet_dense_latency.h:79:2
+WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: firmware/nnet_utils/nnet_dense_latency.h:76:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:62:78
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:62:82
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject.cpp:38:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject.cpp:39:5
+Execute         send_msg_by_id WARNING @200-471@%s%s 7 firmware/myproject.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 7 issue(s) in file firmware/myproject.cpp
+Execute         tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp std=c++0x 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/tidy-3.1.myproject.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0 > /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/tidy-3.1.myproject.pp.0.cpp.out.log 2> /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/tidy-3.1.myproject.pp.0.cpp.err.log 
+Command           ap_eval done; 1.81 sec.
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -fhls -ferror-limit=0 > /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/xilinx-legacy-rewriter.myproject.pp.0.cpp.out.log 2> /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/xilinx-legacy-rewriter.myproject.pp.0.cpp.err.log 
+Command           ap_eval done; 0.82 sec.
+Command         tidy_31 done; 2.69 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 4.8 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute         tidy_31 xilinx-ssdm-intrinsics-arguments /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pragma.1.cpp std=c++0x 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pragma.1.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command         tidy_31 done; 2.03 sec.
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+INFO-FLOW: Processing labels
+Execute         clang -src /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pragma.2.cpp"  -std=c++0x  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o "/home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.bc" 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.pragma.2.cpp -std=c++0x -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot -I /opt/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.bc
+Command         clang done; 2.29 sec.
+INFO-FLOW: Linking Debug ...
+Execute         llvm-ld /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.g.bc -hls-opt -except-internalize myproject -L/opt/Xilinx/Vivado/2019.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.g 
+Command         llvm-ld done; 0.89 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1043.074 ; gain = 523.035 ; free physical = 89535 ; free virtual = 109800
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1043.074 ; gain = 523.035 ; free physical = 89535 ; free virtual = 109800
+Execute         get_config_sdx -target 
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute           cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute           transform -promote-dbg-pointer /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.pp.bc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute           llvm-ld /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/Xilinx/Vivado/2019.2/lnx64/lib -lfloatconversion -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.g.0 
+Command           llvm-ld done; 0.88 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top myproject -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.g.0.bc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'nnet::fill_zero_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_padding_stream.h:131).
+INFO: [XFORM 203-603] Inlining function 'nnet::fill_zero_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_padding_stream.h:125).
+INFO: [XFORM 203-603] Inlining function 'nnet::fill_zero_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_padding_stream.h:119).
+INFO: [XFORM 203-603] Inlining function 'nnet::fill_zero_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_padding_stream.h:113).
+INFO: [XFORM 203-603] Inlining function 'nnet::fill_data_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' into 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' (firmware/nnet_utils/nnet_padding_stream.h:122).
+INFO: [XFORM 203-603] Inlining function 'nnet::shift_right_small<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' into 'nnet::cnnshift_arr<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' (firmware/nnet_utils/nnet_conv2d_stream.h:118).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2_mult>' into 'nnet::dense_resource<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2_mult>' (firmware/nnet_utils/nnet_dense_resource.h:278).
+INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2_mult>' into 'nnet::conv_2d_large_cl_nopad_pad_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' (firmware/nnet_utils/nnet_conv2d_stream.h:183).
+INFO: [XFORM 203-603] Inlining function 'nnet::conv_2d_large_cl_nopad_pad_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' into 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' (firmware/nnet_utils/nnet_conv2d_stream.h:388).
+Command           transform done; 0.29 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1043.074 ; gain = 523.035 ; free physical = 89519 ; free virtual = 109787
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.g.1.bc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'nnet::cast<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2_mult>' into 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' (firmware/nnet_utils/nnet_dense_resource.h:103->firmware/nnet_utils/nnet_dense_resource.h:278->firmware/nnet_utils/nnet_conv2d_stream.h:183->firmware/nnet_utils/nnet_conv2d_stream.h:388) automatically.
+Command           transform done; 0.16 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute           transform -syn-check /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1043.074 ; gain = 523.035 ; free physical = 89515 ; free virtual = 109784
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.g.1.bc to /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute           transform -hls -tmp /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.o.1.bc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'res_pack.V' (firmware/nnet_utils/nnet_conv2d_stream.h:151).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.3' (firmware/nnet_utils/nnet_dense_resource.h:74) in function 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'nnet::cnnshift_arr<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' (firmware/nnet_utils/nnet_conv2d_stream.h:80:51).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-2' (firmware/nnet_utils/nnet_conv2d_stream.h:80) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (firmware/nnet_utils/nnet_padding_stream.h:23) in function 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (firmware/nnet_utils/nnet_padding_stream.h:23) in function 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.1' (firmware/nnet_utils/nnet_padding_stream.h:47) in function 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.3' (firmware/nnet_utils/nnet_padding_stream.h:23) in function 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (firmware/nnet_utils/nnet_padding_stream.h:23) in function 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (firmware/nnet_utils/nnet_conv2d_stream.h:169) in function 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'InitAccum' (firmware/nnet_utils/nnet_dense_resource.h:68) in function 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3.1' (firmware/nnet_utils/nnet_dense_resource.h:79) in function 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.3.2' (firmware/nnet_utils/nnet_dense_resource.h:90) in function 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Result' (firmware/nnet_utils/nnet_dense_resource.h:101) in function 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'CastLoop' (firmware/nnet_utils/nnet_conv2d_stream.h:187) in function 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (firmware/nnet_utils/nnet_conv2d_stream.h:108) in function 'nnet::cnnshift_arr<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (firmware/nnet_utils/nnet_conv2d_stream.h:111) in function 'nnet::cnnshift_arr<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (firmware/nnet_utils/nnet_conv2d_stream.h:80) in function 'nnet::cnnshift_arr<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1' (firmware/nnet_utils/nnet_conv2d_stream.h:82) in function 'nnet::cnnshift_arr<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' (firmware/nnet_utils/nnet_conv2d_stream.h:83) in function 'nnet::cnnshift_arr<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (firmware/nnet_utils/nnet_conv2d_stream.h:89) in function 'nnet::cnnshift_arr<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1' (firmware/nnet_utils/nnet_conv2d_stream.h:91) in function 'nnet::cnnshift_arr<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' completely with a factor of 8.
+INFO: [XFORM 203-131] Reshaping array 'tmpdata.V' (firmware/nnet_utils/nnet_conv2d_stream.h:139) in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'layer_in.V'  in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'layer_out.i'  in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'w2.V'  in dimension 1 with a block factor of 8.
+INFO: [XFORM 203-131] Reshaping array 'tmpinput.V' (firmware/nnet_utils/nnet_conv2d_stream.h:105) in dimension 1 completely.
+INFO: [XFORM 203-131] Reshaping array 'tmpinput.V' (firmware/nnet_utils/nnet_conv2d_stream.h:105) in dimension 2 completely.
+INFO: [XFORM 203-102] Automatically partitioning shift register array 'layer_in_row.Array.V' .
+INFO: [XFORM 203-101] Partitioning array 'b2.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'acc.V' (firmware/nnet_utils/nnet_dense_resource.h:64) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmpmult.V' (firmware/nnet_utils/nnet_dense_resource.h:76) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer_in_row.Array.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'layer_in_row.Array.V' in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'nnet::cast<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2_mult>' into 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' (firmware/nnet_utils/nnet_dense_resource.h:103->firmware/nnet_utils/nnet_dense_resource.h:278->firmware/nnet_utils/nnet_conv2d_stream.h:183->firmware/nnet_utils/nnet_conv2d_stream.h:388) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'myproject', detected/extracted 3 process function(s): 
+	 'Block__proc'
+	 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>'
+	 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>'.
+Command           transform done; 2.55 sec.
+INFO-FLOW: Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' (firmware/nnet_utils/nnet_conv2d_stream.h:74:3)...3 expression(s) balanced.
+Command           transform done; 0.33 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1043.074 ; gain = 523.035 ; free physical = 89482 ; free virtual = 109752
+INFO-FLOW: Building ssdm...
+Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.o.2.bc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (firmware/nnet_utils/nnet_conv2d_stream.h:167:21) in function 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [XFORM 203-631] Renaming function 'nnet::zeropad2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>' to 'zeropad2d_cl_me<ap_fixed,ap_fixed,config4>' (firmware/nnet_utils/nnet_padding_stream.h:26:59)
+WARNING: [XFORM 203-631] Renaming function 'nnet::product_dense<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0> >' to 'product_dense<ap_fixed,ap_fixed,ap_fixed >' (firmware/nnet_utils/nnet_dense_resource.h:37:9)
+WARNING: [XFORM 203-631] Renaming function 'nnet::conv_2d_cl_me<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' to 'conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2>' (firmware/nnet_utils/nnet_conv2d_stream.h:74:3)
+WARNING: [XFORM 203-631] Renaming function 'nnet::cnnshift_arr<ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 14, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>' to 'cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2>' (firmware/nnet_utils/nnet_conv2d_stream.h:92:1)
+Command           transform done; 0.65 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1043.074 ; gain = 523.035 ; free physical = 89438 ; free virtual = 109709
+INFO-FLOW: Finish building internal data model.
+Command         opt_and_import_c done; 4.99 sec.
+Command       elaborate done; 21.6 sec.
+Execute       autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'myproject' ...
+Execute         ap_set_top_model myproject 
+WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'.
+WARNING: [SYN 201-103] Legalizing function name 'zeropad2d_cl_me<ap_fixed,ap_fixed,config4>' to 'zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s'.
+WARNING: [SYN 201-103] Legalizing function name 'cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2>' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s'.
+WARNING: [SYN 201-103] Legalizing function name 'product_dense<ap_fixed,ap_fixed,ap_fixed >' to 'product_dense_ap_fixed_ap_fixed_ap_fixed_s'.
+WARNING: [SYN 201-103] Legalizing function name 'conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2>' to 'conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s'.
+Execute         get_model_list myproject -filter all-wo-channel -topdown 
+Execute         preproc_iomode -model myproject 
+Execute         preproc_iomode -model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         preproc_iomode -model product_dense<ap_fixed,ap_fixed,ap_fixed > 
+Execute         preproc_iomode -model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         preproc_iomode -model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+Execute         preproc_iomode -model Block__proc 
+Execute         get_model_list myproject -filter all-wo-channel 
+INFO-FLOW: Model list for configure: Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject
+INFO-FLOW: Configuring Module : Block__proc ...
+Execute         set_default_model Block__proc 
+Execute         apply_spec_resource_limit Block__proc 
+INFO-FLOW: Configuring Module : zeropad2d_cl_me<ap_fixed,ap_fixed,config4> ...
+Execute         set_default_model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+Execute         apply_spec_resource_limit zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+INFO-FLOW: Configuring Module : cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> ...
+Execute         set_default_model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         apply_spec_resource_limit cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+INFO-FLOW: Configuring Module : product_dense<ap_fixed,ap_fixed,ap_fixed > ...
+Execute         set_default_model product_dense<ap_fixed,ap_fixed,ap_fixed > 
+Execute         apply_spec_resource_limit product_dense<ap_fixed,ap_fixed,ap_fixed > 
+INFO-FLOW: Configuring Module : conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> ...
+Execute         set_default_model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         apply_spec_resource_limit conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+INFO-FLOW: Configuring Module : myproject ...
+Execute         set_default_model myproject 
+Execute         apply_spec_resource_limit myproject 
+INFO-FLOW: Model list for preprocess: Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject
+INFO-FLOW: Preprocessing Module: Block__proc ...
+Execute         set_default_model Block__proc 
+Execute         cdfg_preprocess -model Block__proc 
+Execute         rtl_gen_preprocess Block__proc 
+INFO-FLOW: Preprocessing Module: zeropad2d_cl_me<ap_fixed,ap_fixed,config4> ...
+Execute         set_default_model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+Execute         cdfg_preprocess -model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+Execute         rtl_gen_preprocess zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+INFO-FLOW: Preprocessing Module: cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> ...
+Execute         set_default_model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         cdfg_preprocess -model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         rtl_gen_preprocess cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+INFO-FLOW: Preprocessing Module: product_dense<ap_fixed,ap_fixed,ap_fixed > ...
+Execute         set_default_model product_dense<ap_fixed,ap_fixed,ap_fixed > 
+Execute         cdfg_preprocess -model product_dense<ap_fixed,ap_fixed,ap_fixed > 
+Execute         rtl_gen_preprocess product_dense<ap_fixed,ap_fixed,ap_fixed > 
+INFO-FLOW: Preprocessing Module: conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> ...
+Execute         set_default_model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         cdfg_preprocess -model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         rtl_gen_preprocess conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+INFO-FLOW: Preprocessing Module: myproject ...
+Execute         set_default_model myproject 
+Execute         cdfg_preprocess -model myproject 
+Execute         rtl_gen_preprocess myproject 
+INFO-FLOW: Model list for synthesis: Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model Block__proc 
+Execute         schedule -model Block__proc 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 24.44 seconds; current allocated memory: 196.496 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.verbose.sched.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.sched.adb -f 
+INFO-FLOW: Finish scheduling Block__proc.
+Execute         set_default_model Block__proc 
+Execute         bind -model Block__proc 
+BIND OPTION: model=Block__proc
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 196.541 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.verbose.bind.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.bind.adb -f 
+INFO-FLOW: Finish binding Block__proc.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+Execute         schedule -model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 0.61 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 197.001 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.verbose.sched.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.sched.adb -f 
+INFO-FLOW: Finish scheduling zeropad2d_cl_me<ap_fixed,ap_fixed,config4>.
+Execute         set_default_model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+Execute         bind -model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+BIND OPTION: model=zeropad2d_cl_me<ap_fixed,ap_fixed,config4>
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 197.270 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.verbose.bind.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.bind.adb -f 
+INFO-FLOW: Finish binding zeropad2d_cl_me<ap_fixed,ap_fixed,config4>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         schedule -model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 197.400 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.verbose.sched.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.sched.adb -f 
+INFO-FLOW: Finish scheduling cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2>.
+Execute         set_default_model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         bind -model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+BIND OPTION: model=cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2>
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 197.620 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.verbose.bind.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.bind.adb -f 
+INFO-FLOW: Finish binding cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'product_dense_ap_fixed_ap_fixed_ap_fixed_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model product_dense<ap_fixed,ap_fixed,ap_fixed > 
+Execute         schedule -model product_dense<ap_fixed,ap_fixed,ap_fixed > 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'product_dense<ap_fixed,ap_fixed,ap_fixed >'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 197.714 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.verbose.sched.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.sched.adb -f 
+INFO-FLOW: Finish scheduling product_dense<ap_fixed,ap_fixed,ap_fixed >.
+Execute         set_default_model product_dense<ap_fixed,ap_fixed,ap_fixed > 
+Execute         bind -model product_dense<ap_fixed,ap_fixed,ap_fixed > 
+BIND OPTION: model=product_dense<ap_fixed,ap_fixed,ap_fixed >
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 197.765 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.verbose.bind.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.bind.adb -f 
+INFO-FLOW: Finish binding product_dense<ap_fixed,ap_fixed,ap_fixed >.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         schedule -model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 0.2 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 198.263 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.verbose.sched.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.sched.adb -f 
+INFO-FLOW: Finish scheduling conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2>.
+Execute         set_default_model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         bind -model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+BIND OPTION: model=conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2>
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 198.927 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.verbose.bind.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.bind.adb -f 
+INFO-FLOW: Finish binding conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'myproject' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model myproject 
+Execute         schedule -model myproject 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 199.057 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.verbose.sched.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.sched.adb -f 
+INFO-FLOW: Finish scheduling myproject.
+Execute         set_default_model myproject 
+Execute         bind -model myproject 
+BIND OPTION: model=myproject
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command         bind done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 199.227 MB.
+Execute         syn_report -verbosereport -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.verbose.bind.rpt 
+Execute         db_write -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.bind.adb -f 
+INFO-FLOW: Finish binding myproject.
+Execute         get_model_list myproject -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess Block__proc 
+Execute         rtl_gen_preprocess zeropad2d_cl_me<ap_fixed,ap_fixed,config4> 
+Execute         rtl_gen_preprocess cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         rtl_gen_preprocess product_dense<ap_fixed,ap_fixed,ap_fixed > 
+Execute         rtl_gen_preprocess conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> 
+Execute         rtl_gen_preprocess myproject 
+INFO-FLOW: Model list for RTL generation: Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model Block__proc -vendor xilinx -mg_file /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 199.395 MB.
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute         gen_rtl Block__proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/systemc/Block_proc -synmodules Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject 
+Execute         gen_rtl Block__proc -style xilinx -f -lang vhdl -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/vhdl/Block_proc 
+Execute         gen_rtl Block__proc -style xilinx -f -lang vlog -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/verilog/Block_proc 
+Execute         syn_report -csynth -model Block__proc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/Block_proc_csynth.rpt 
+Execute         syn_report -rtlxml -model Block__proc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/Block_proc_csynth.xml 
+Execute         syn_report -verbosereport -model Block__proc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.verbose.rpt 
+Execute         db_write -model Block__proc -f -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.adb 
+Execute         gen_tb_info Block__proc -p /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> -vendor xilinx -mg_file /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 200.429 MB.
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute         gen_rtl zeropad2d_cl_me<ap_fixed,ap_fixed,config4> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/systemc/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s -synmodules Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject 
+Execute         gen_rtl zeropad2d_cl_me<ap_fixed,ap_fixed,config4> -style xilinx -f -lang vhdl -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/vhdl/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s 
+Execute         gen_rtl zeropad2d_cl_me<ap_fixed,ap_fixed,config4> -style xilinx -f -lang vlog -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/verilog/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s 
+Execute         syn_report -csynth -model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s_csynth.rpt 
+Execute         syn_report -rtlxml -model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s_csynth.xml 
+Execute         syn_report -verbosereport -model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.verbose.rpt 
+Execute         db_write -model zeropad2d_cl_me<ap_fixed,ap_fixed,config4> -f -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.adb 
+Execute         gen_tb_info zeropad2d_cl_me<ap_fixed,ap_fixed,config4> -p /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -vendor xilinx -mg_file /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_0_0' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layebkb' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_1_0' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layecud' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_0_1' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layedEe' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_1_1' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layeeOg' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_0_2' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layefYi' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_1_2' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layeg8j' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_0_3' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layehbi' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_1_3' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layeibs' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_0_4' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layejbC' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_1_4' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layekbM' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_0_5' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layelbW' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_1_5' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layemb6' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_0_6' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layencg' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_1_6' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layeocq' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_0_7' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layepcA' due to the length limit 60
+INFO: [SYN 201-210] Renamed object name 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layer_in_row_Array_V_1_7' to 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layeqcK' due to the length limit 60
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s'.
+Command         create_rtl_model done; 0.14 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 202.531 MB.
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute         gen_rtl cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/systemc/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s -synmodules Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject 
+Execute         gen_rtl cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -style xilinx -f -lang vhdl -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/vhdl/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s 
+Execute         gen_rtl cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -style xilinx -f -lang vlog -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/verilog/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s 
+Execute         syn_report -csynth -model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_csynth.rpt 
+Execute         syn_report -rtlxml -model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_csynth.xml 
+Execute         syn_report -verbosereport -model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.verbose.rpt 
+Execute         db_write -model cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -f -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.adb 
+Execute         gen_tb_info cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -p /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'product_dense_ap_fixed_ap_fixed_ap_fixed_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model product_dense<ap_fixed,ap_fixed,ap_fixed > -vendor xilinx -mg_file /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'myproject_mul_mul_16s_16s_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'product_dense_ap_fixed_ap_fixed_ap_fixed_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 203.271 MB.
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute         gen_rtl product_dense<ap_fixed,ap_fixed,ap_fixed > -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/systemc/product_dense_ap_fixed_ap_fixed_ap_fixed_s -synmodules Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject 
+Execute         gen_rtl product_dense<ap_fixed,ap_fixed,ap_fixed > -style xilinx -f -lang vhdl -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/vhdl/product_dense_ap_fixed_ap_fixed_ap_fixed_s 
+Execute         gen_rtl product_dense<ap_fixed,ap_fixed,ap_fixed > -style xilinx -f -lang vlog -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/verilog/product_dense_ap_fixed_ap_fixed_ap_fixed_s 
+Execute         syn_report -csynth -model product_dense<ap_fixed,ap_fixed,ap_fixed > -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/product_dense_ap_fixed_ap_fixed_ap_fixed_s_csynth.rpt 
+Execute         syn_report -rtlxml -model product_dense<ap_fixed,ap_fixed,ap_fixed > -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/product_dense_ap_fixed_ap_fixed_ap_fixed_s_csynth.xml 
+Execute         syn_report -verbosereport -model product_dense<ap_fixed,ap_fixed,ap_fixed > -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.verbose.rpt 
+Execute         db_write -model product_dense<ap_fixed,ap_fixed,ap_fixed > -f -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.adb 
+Execute         gen_tb_info product_dense<ap_fixed,ap_fixed,ap_fixed > -p /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -vendor xilinx -mg_file /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+WARNING: [RTGEN 206-101] Register 'layer_in_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sX' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'sY' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'pY' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'pX' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 204.466 MB.
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute         gen_rtl conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/systemc/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s -synmodules Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject 
+Execute         gen_rtl conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -style xilinx -f -lang vhdl -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/vhdl/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s 
+Execute         gen_rtl conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -style xilinx -f -lang vlog -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/verilog/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s 
+Execute         syn_report -csynth -model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_csynth.rpt 
+Execute         syn_report -rtlxml -model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_csynth.xml 
+Execute         syn_report -verbosereport -model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.verbose.rpt 
+Execute         db_write -model conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -f -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.adb 
+Execute         gen_tb_info conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> -p /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'myproject' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model myproject -vendor xilinx -mg_file /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/input_1_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/layer2_out_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/const_size_in_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myproject/const_size_out_1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'myproject' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_U0' to 'start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU' due to the length limit 60
+INFO: [RTGEN 206-100] Finished creating RTL model for 'myproject'.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 207.242 MB.
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute         gen_rtl myproject -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/systemc/myproject -synmodules Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject 
+Execute         gen_rtl myproject -istop -style xilinx -f -lang vhdl -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/vhdl/myproject 
+Execute         gen_rtl myproject -istop -style xilinx -f -lang vlog -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/verilog/myproject 
+Execute         syn_report -csynth -model myproject -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/myproject_csynth.rpt 
+Execute         syn_report -rtlxml -model myproject -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/syn/report/myproject_csynth.xml 
+Execute         syn_report -verbosereport -model myproject -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.verbose.rpt 
+Execute         db_write -model myproject -f -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.adb 
+Execute         gen_tb_info myproject -p /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject 
+Execute         export_constraint_db -f -tool general -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.constraint.tcl 
+Execute         syn_report -designview -model myproject -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.design.xml 
+Execute         get_config_rtl -disable_wave_debug 
+Execute         syn_report -wcfg -model myproject -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject_dataflow_ana.wcfg 
+Execute         syn_report -protoinst -model myproject -o /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.protoinst 
+Execute         get_config_debug -directory 
+Execute         sc_get_clocks myproject 
+Execute         get_config_export -vivado_clock 
+Execute         sc_get_portdomain myproject 
+INFO-FLOW: Model list for RTL component generation: Block__proc zeropad2d_cl_me<ap_fixed,ap_fixed,config4> cnnshift_arr<ap_fixed,ap_fixed<16,14,5,3,0>,config2> {product_dense<ap_fixed,ap_fixed,ap_fixed >} conv_2d_cl_me<ap_fixed,ap_fixed<16,14,5,3,0>,config2> myproject
+INFO-FLOW: Handling components in module [Block_proc] ... 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.compgen.tcl 
+INFO-FLOW: Handling components in module [zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s] ... 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.compgen.tcl 
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Handling components in module [cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s] ... 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+INFO-FLOW: Found component cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layebkb.
+INFO-FLOW: Append model cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layebkb
+INFO-FLOW: Handling components in module [product_dense_ap_fixed_ap_fixed_ap_fixed_s] ... 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.compgen.tcl 
+INFO-FLOW: Found component myproject_mul_mul_16s_16s_18_1_1.
+INFO-FLOW: Append model myproject_mul_mul_16s_16s_18_1_1
+INFO-FLOW: Handling components in module [conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s] ... 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+INFO-FLOW: Found component conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_w2_V.
+INFO-FLOW: Append model conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_w2_V
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Handling components in module [myproject] ... 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
+INFO-FLOW: Found component fifo_w16_d25_A.
+INFO-FLOW: Append model fifo_w16_d25_A
+INFO-FLOW: Found component start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU.
+INFO-FLOW: Append model start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Append model Block_proc
+INFO-FLOW: Append model zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s
+INFO-FLOW: Append model cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s
+INFO-FLOW: Append model product_dense_ap_fixed_ap_fixed_ap_fixed_s
+INFO-FLOW: Append model conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s
+INFO-FLOW: Append model myproject
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: regslice_core cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layebkb myproject_mul_mul_16s_16s_18_1_1 conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_w2_V regslice_core fifo_w16_d25_A start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU regslice_core Block_proc zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s product_dense_ap_fixed_ap_fixed_ap_fixed_s conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s myproject
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_layebkb
+INFO-FLOW: To file: write model myproject_mul_mul_16s_16s_18_1_1
+INFO-FLOW: To file: write model conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_w2_V
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model fifo_w16_d25_A
+INFO-FLOW: To file: write model start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model Block_proc
+INFO-FLOW: To file: write model zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s
+INFO-FLOW: To file: write model cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s
+INFO-FLOW: To file: write model product_dense_ap_fixed_ap_fixed_ap_fixed_s
+INFO-FLOW: To file: write model conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s
+INFO-FLOW: To file: write model myproject
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute         syn_report -model myproject -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 265.25 MHz
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.11 sec.
+Command         ap_source done; 0.11 sec.
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=5.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.compgen.tcl 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s_w2_V_rom' using auto ROMs.
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'layer4_out_V_V_U(fifo_w16_d25_A)' using Shift Registers.
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU_U(start_for_conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_conrcU)' using Shift Registers.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.11 sec.
+Command         ap_source done; 0.11 sec.
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=myproject xml_exists=0
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute           ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.constraint.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=10
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=14 #gSsdmPorts=10
+Execute         source /opt/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_export -xo 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_sdx -target 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.compgen.dataonly.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.constraint.tcl 
+Execute         sc_get_clocks myproject 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_debug -directory 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.tbgen.tcl 
+Execute         source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute         get_config_sdx -target 
+Execute         get_config_sdx -profile 
+Execute         get_config_rtl -kernel_profile 
+Execute         get_config_rtl -stall_sig_gen 
+Execute         get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1043.078 ; gain = 523.039 ; free physical = 89399 ; free virtual = 109677
+INFO: [VHDL 208-304] Generating VHDL RTL for myproject.
+INFO: [VLOG 209-307] Generating Verilog RTL for myproject.
+Command       autosyn done; 3.91 sec.
+Command     csynth_design done; 25.51 sec.
+Execute     add_files -tb myproject_test.cpp -cflags -std=c++0x -DRTL_SIM 
+INFO: [HLS 200-10] Adding test bench file 'myproject_test.cpp' to the project
+Execute     cosim_design -trace_level all 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.11 sec.
+Command       ap_source done; 0.11 sec.
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       is_encrypted /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp 
+Execute       is_encrypted /home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+INFO-FLOW: TB processing: /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_test.cpp /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/myproject_test.cpp_pre.cpp
+Execute       tidy_31 xilinx-tb-xfmat /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/myproject_test.cpp_pre.cpp std=c++0x 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/myproject_test.cpp_pre.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command       tidy_31 done; 1.65 sec.
+Execute       tidy_31 xilinx-tb31-process /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/myproject_test.cpp_pre.cpp.tb.cpp std=c++0x 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/myproject_test.cpp_pre.cpp.tb.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command       tidy_31 done; 2.39 sec.
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+INFO-FLOW: TB processing: /home/YL_HUANG/7_8/8_filter/read_from_weight_h/firmware/myproject.cpp /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp
+Execute       tidy_31 xilinx-tb-xfmat /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp std=c++0x 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command       tidy_31 done; 1.47 sec.
+Execute       tidy_31 xilinx-tb31-process /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp std=c++0x 
+INFO-FLOW: exec /opt/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp -- -std=c++0x -fhls -ferror-limit=0
+Command       tidy_31 done; 1.49 sec.
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/./sim/autowrap/testbench/tb.status.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+Execute       source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command       ap_source done; 0.21 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source ../tv/cdatafile/ref.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source ../tv/cdatafile/ref.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute       source .run_sim.tcl 
+Execute         source check_sim.tcl 
+Execute         source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command       ap_source done; 17.83 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command     cosim_design done; 32.66 sec.
+Execute     export_design -format ip_catalog 
+Execute       get_config_export -acc 
+Execute       get_config_export -clock_margin 
+Execute       get_config_export -custom_script 
+Execute       get_config_export -description 
+Execute       get_config_export -display_name 
+Execute       get_config_export -driver_input_dir 
+Execute       get_config_export -ipname 
+Execute       get_config_export -kernel_drc 
+Execute       get_config_export -library 
+Execute       get_config_export -qor_test 
+Execute       get_config_export -rtl 
+Execute       get_config_export -sdaccel 
+Execute       get_config_export -sim 
+Execute       get_config_export -taxonomy 
+Execute       get_config_export -use_ip 
+Execute       get_config_export -use_netlist 
+Execute       get_config_export -vendor 
+Execute       get_config_export -version 
+Execute       get_config_export -xo 
+Execute       config_export -format=ip_catalog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -vivado_clock 
+Execute       get_top 
+Execute       get_config_sdx -target 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -sdx-target none
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.11 sec.
+Command       ap_source done; 0.11 sec.
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl both -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl both -sdx-target none -tool Vivado -impltomg_flag
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/zeropad2d_cl_me_ap_fixed_ap_fixed_config4_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/cnnshift_arr_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/product_dense_ap_fixed_ap_fixed_ap_fixed_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/conv_2d_cl_me_ap_fixed_ap_fixed_16_14_5_3_0_config2_s.compgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.compgen.tcl 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.constraint.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=10
+INFO-FLOW: DBG:CMD:       copying IP vlog from /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=10
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=myproject
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=myproject
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.rtl_wrap.cfg.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.constraint.tcl 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/myproject.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-files /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/impl/.verilog/sim_tbs
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /opt/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu9eg-ffvb1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec /home/YL_HUANG/7_8/8_filter/read_from_weight_h/myproject_prj/solution1/impl/ip/pack.sh
+Command     export_design done; 11.38 sec.
+Execute     cleanup_all 
